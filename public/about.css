@@ -1,0 +1,111 @@
+/* About section start */
+.about__container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* margin-top: 5rem; */
+  padding-top: 2rem;
+}
+
+.about-left img {
+  width: 400px;
+  height: 500px;
+}
+
+.about-right {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.about-right__summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 2.5rem;
+}
+.about-right__summary article {
+  border-radius: 20px;
+  width: 200px;
+  height: 200px;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid transparent;
+  transition: var(--transition);
+  cursor: default;
+}
+
+.about-right__summary article:hover {
+  border: 2px solid var(--clr-primary-variant);
+  background: transparent;
+}
+
+.about-right__skills {
+  padding: 1.5rem 2.5rem;
+  border-radius: 20px;
+}
+
+.skills-row {
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  gap: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.skills-row span {
+  border: 1px solid var(--clr-primary-variant);
+  border-radius: 4px;
+  padding: 0.2rem 0.8rem;
+  cursor: default;
+  transition: var(--transition);
+}
+.skills-row span:hover {
+  border-color: transparent;
+  background-color: var(--clr-primary-variant);
+}
+
+/* ################################################## */
+/* For tablet/medium devices */
+@media screen and (max-width: 1024px) {
+  .about__container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .about-left {
+    margin: auto;
+  }
+}
+
+/* For mobiles/small device */
+@media screen and (max-width: 600px) {
+  /* About */
+  .about__container {
+    grid-template-columns: 1fr;
+  }
+  .about-left img {
+    display: none;
+  }
+
+  .about-right__summary {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-right__skills {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.25rem;
+    flex-direction: column;
+  }
+  .skills-row {
+    flex-wrap: wrap;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--clr-primary-variant);
+    justify-content: start;
+    gap: 0.5rem;
+    width: 100%;
+  }
+}

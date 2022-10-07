@@ -1,0 +1,151 @@
+/* Experience section */
+.experience__container {
+  position: relative;
+}
+.experience__container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  background: var(--clr-primary-variant);
+  width: 10%;
+  height: 4px;
+}
+.experience__container::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background: var(--clr-primary-variant);
+  top: 0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: -2;
+
+  animation: moveline 6s linear forwards;
+}
+
+@keyframes moveline {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+.experience-cards {
+  padding: 1.5rem 2rem;
+  position: relative;
+  width: 50%;
+  margin-bottom: 1rem;
+
+  animation: moveboxes 1s linear forwards;
+  opacity: 0;
+}
+
+@keyframes moveboxes {
+  0% {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.experience-cards:nth-child(1) {
+  animation-delay: 0;
+}
+.experience-cards:nth-child(2) {
+  animation-delay: 2s;
+}
+.experience-cards:nth-child(3) {
+  animation-delay: 4s;
+}
+
+.experience-card {
+  position: relative;
+  padding: 1.5rem 2rem;
+  border-radius: 4px;
+}
+
+.experience-card p {
+  color: var(--clr-grey);
+}
+
+.dot {
+  width: 32px;
+  height: 32px;
+  background: var(--clr-primary-variant);
+  z-index: 10;
+  border-radius: 50%;
+
+  position: absolute;
+  left: -16px;
+  top: 32px;
+}
+
+.left-container > .dot {
+  left: 100%;
+  transform: translateX(-50%);
+}
+
+.left-arrow,
+.right-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 10px;
+  right: -15px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid var(--clr-bg-variant);
+}
+
+.right-arrow {
+  border-left: 0;
+  border-right: 15px solid var(--clr-bg-variant);
+  left: -15px;
+}
+
+/* ################################################## */
+/* For tablet/medium devices */
+@media screen and (max-width: 1024px) {
+}
+
+/* For mobiles/small device */
+@media screen and (max-width: 600px) {
+  .experience-cards {
+    width: 100%;
+    padding-left: 4rem;
+    padding-right: 2rem;
+  }
+  .experience-card {
+    padding: 1rem;
+    font-size: 0.75rem;
+  }
+  .right-container {
+    left: 0;
+  }
+  .left-arrow {
+    border-left: 0;
+    border-right: 15px solid var(--clr-bg-variant);
+    left: -15px;
+  }
+
+  .dot {
+    left: 32px;
+    transform: translateX(-50%);
+  }
+  .left-container > .dot {
+    left: 32px;
+  }
+
+  .experience__container::after {
+    left: 31px;
+  }
+}
