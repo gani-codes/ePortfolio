@@ -1,0 +1,145 @@
+.projects__container {
+  position: relative;
+}
+.project {
+  position: relative;
+  /* display: grid;
+  grid-template-columns: 60% 40%; */
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  gap: 1rem;
+  margin-bottom: 6rem;
+}
+
+.project--right {
+  flex-direction: row-reverse;
+  /* grid-template-columns: 40% 60%; */
+}
+
+.project__preview {
+  border: 1px solid var(--clr-primary-variant);
+  height: 350px;
+  border-radius: 16px;
+  object-fit: contain;
+  overflow: scroll;
+
+  position: relative;
+
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.project__preview::-webkit-scrollbar {
+  display: none;
+}
+
+.project__preview--bottom {
+  cursor: all-scroll;
+  position: relative;
+}
+
+.project__preview--bottom::before {
+  content: "";
+  width: 100%;
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(2, 22, 49, 0.5),
+    rgba(2, 22, 48, 0.5)
+  );
+  transition: width 1.5s ease-in-out;
+}
+
+.project__preview--bottom:hover:before {
+  /* height: 0%; */
+  width: 0%;
+}
+
+.project__content {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+
+  position: absolute;
+  top: 0;
+  right: 10%;
+  text-align: right;
+
+  z-index: 1;
+
+  cursor: default;
+  position: relative;
+}
+
+.project__content--left {
+  left: 10%;
+  text-align: left;
+}
+
+.project__content--desc {
+  padding: 1rem;
+  text-align: left;
+  min-width: 300px;
+}
+
+.project__content h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.project__content--desc p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.project__content-techstack span {
+  margin-right: 2rem;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+.project__content-techstack span:last-child {
+  margin: 0;
+}
+
+.project__content--code a:first-child {
+  margin-right: 1rem;
+}
+
+/* For tablets */
+@media screen and (max-width: 1024px) {
+  .project__content {
+    position: static;
+  }
+}
+
+/* for mobile and smaller screens */
+@media screen and (max-width: 600px) {
+  .project {
+    flex-wrap: wrap-reverse;
+    grid-template-columns: 1fr;
+    margin-bottom: 1.5rem;
+  }
+  .project__preview {
+    height: 300px;
+  }
+  .project__content {
+    margin-top: 1.5rem;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    position: static;
+  }
+}
