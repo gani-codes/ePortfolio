@@ -62,9 +62,14 @@
   cursor: default;
   transition: var(--transition);
 }
+
 .skills-row span:hover {
   border-color: transparent;
   background-color: var(--clr-primary-variant);
+}
+
+.skill-efficiency {
+  display: none;
 }
 
 /* ################################################## */
