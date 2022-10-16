@@ -1,3 +1,30 @@
+/* animation */
+#about.hidden,
+article.bg-variant.hidden,
+.about-right__skills.hidden {
+  transform: translateX(-100%);
+}
+
+#about.show,
+article.bg-variant.show,
+.about-right__skills.show {
+  transform: translateX(0);
+}
+
+article.bg-variant.hidden:nth-child(1) {
+  transition-delay: 300ms;
+}
+article.hidden:nth-child(2) {
+  transition-delay: 600ms;
+}
+article.hidden:last-child {
+  transition-delay: 900ms;
+}
+
+article.show {
+  transition: var(--transition);
+}
+
 /* About section start */
 .about__container {
   position: relative;
@@ -5,6 +32,7 @@
   grid-template-columns: 1fr 1fr;
   /* margin-top: 5rem; */
   padding-top: 2rem;
+  gap: 1rem;
 }
 
 .about-left img {

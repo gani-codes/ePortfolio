@@ -11,10 +11,12 @@
   <link rel="stylesheet" href="./public/experience.css" />
   <link rel="stylesheet" href="./public/contact.css" />
   <link rel="stylesheet" href="./public/projects.css" />
+
+  <script defer src="./index.js"></script>
 </head>
 
 <body>
-  <header id="home">
+  <header  id="home">
     <div class="container">
       <nav id="navigationBar">
         <a class="active-link" href="#home">Home</a>
@@ -22,8 +24,8 @@
         <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
       </nav>
-      <div class="hero">
-        <div class="heroleft">
+      <div class="hero ">
+        <div class="heroleft hidden">
           <h2>Welcome, my name is</h2>
           <h1 id="myname">Gani Shaikh.</h1>
           <h2>&lt; Web Developer/ &gt;</h2>
@@ -37,11 +39,11 @@
             <a href="./public/resume.pdf" target="_blank" class="cta">Download Resume</a>
           </div>
         </div>
-        <div class="heroright">
+        <div class="heroright hidden">
           <img id="profilePic" src="./public/img/profile.png" alt="Profile image" />
         </div>
       </div>
-      <div class="hero-socials">
+      <div class="hero-socials hidden">
         <div id="linkedin-icon">
           <a href="https://www.linkedin.com/in/gani-codes/" target="_blank">
             <ion-icon name="logo-linkedin"></ion-icon>
@@ -66,7 +68,7 @@
     </div>
   </header>
 
-  <section id="about">
+  <section class="hidden" id="about">
     <h5>Get to know</h5>
     <h2>About Me</h2>
     <div class="container about__container">
@@ -75,26 +77,26 @@
       </div>
       <div class="about-right">
         <div class="about-right__summary">
-          <article class="bg-variant">
+          <article class="bg-variant hidden">
             <ion-icon class="text-primary-variant" name="school-sharp"></ion-icon>
             <h2>Education</h2>
             <small>B.Sc CS (9.04)</small>
           </article>
 
-          <article class="bg-variant">
+          <article class="bg-variant hidden">
             <ion-icon class="text-primary-variant" name="briefcase-sharp"></ion-icon>
             <h2>Experience</h2>
             <small>1+ Years</small>
           </article>
 
-          <article class="bg-variant">
+          <article class="bg-variant hidden">
             <ion-icon class="text-primary-variant" name="logo-nodejs"></ion-icon>
             <h2>Project</h2>
             <small>5+</small>
           </article>
         </div>
 
-        <div class="about-right__skills bg-variant">
+        <div class="about-right__skills hidden bg-variant">
           <article class="skills-row">
             <h4 class="text-grey">Programming Langauges</h4>
 
@@ -140,9 +142,9 @@
     </div>
   </section>
 
-  <section id="projects">
+  <section class="" id="projects">
     <div class="container projects__container">
-      <div class="project">
+      <div class="project hidden">
         <div class="project__preview">
           <!-- Need to put three dots here -->
           <div class="project__preview--bottom">
@@ -177,7 +179,7 @@
 
       </div>
       <!-- 2nd project -->
-      <div class="project project--right">
+      <div class="project hidden project--right">
         <div class="project__preview">
           <!-- Need to put three dots here -->
           <div class="project__preview--bottom">
@@ -211,7 +213,7 @@
       </div>
   </section>
 
-  <section id="experience">
+  <section class="hidden" id="experience">
     <h5>My past</h5>
     <h2>Experience</h2>
     <div class="container experience__container">
@@ -221,9 +223,7 @@
           <h2>Cognizant Tech Solutions</h2>
           <small>2021 - Present</small>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
-            libero dolorum, inventore provident nemo consequatur asperiores
-            corrupti quisquam sint
+            Working as an SDET.
           </p>
           <span class="right-arrow"></span>
         </div>
@@ -235,9 +235,7 @@
           <h2>Freelance Web Developer</h2>
           <small>2020 - 2021</small>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
-            libero dolorum, inventore provident nemo consequatur asperiores
-            corrupti quisquam sint
+            Worked as a Freelance Developer for Handcraft India Co. an online ecommerce website. I was responsible for designing and setting up the store section using wordpress 
           </p>
           <span class="left-arrow"></span>
         </div>
@@ -249,9 +247,7 @@
           <h2>Bachelors of Science</h2>
           <small>2017 - 2020</small>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
-            libero dolorum, inventore provident nemo consequatur asperiores
-            corrupti quisquam sint
+            During three years of college I got experienced as a UI designer & Developer
           </p>
           <span class="right-arrow"></span>
         </div>
@@ -259,7 +255,7 @@
     </div>
   </section>
 
-  <section id="contact">
+  <section class="hidden" id="contact">
     <h5>Lets</h5>
     <h2>Get in touch</h2>
     <div class="container contact__container">
@@ -338,8 +334,6 @@
   </footer>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-  <script src="./index.js"></script>
 </body>
 
 </html>
