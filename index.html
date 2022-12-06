@@ -22,6 +22,7 @@
         <a class="active-link" href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
       <div class="hero ">
@@ -29,14 +30,13 @@
           <h2>Welcome, my name is</h2>
           <h1 id="myname">Gani Shaikh.</h1>
           <h2>&lt; Web Developer/ &gt;</h2>
-          <p>
-            I am an IT professional currently working as an Quality Engineer.
-            Currently, I am learning MERN stack.
+          <p id="mydesc">
+            A curious frontend developer and highly motivated learner with industry experience of 1+ years building web applications. I've professional experience working with React JS with a sound knowledge of NodeJS, Express and MongoDB.
           </p>
           <div class="cta-buttons">
             <a href="https://api.whatsapp.com/send/?phone=919834588556&text&type=phone_number&app_absent=0"
               target="_blank" class="cta cta-primary">Say Hello!</a>
-            <a href="./public/resume.pdf" target="_blank" class="cta">Download Resume</a>
+            <a href="https://docs.google.com/document/d/1opYu3tvxeUm-X_Bna6Z9N4jF8EB4YkH7jrFsPG_Kh9Q/edit?usp=sharing" target="_blank" class="cta">Download Resume</a>
           </div>
         </div>
         <div class="heroright hidden">
@@ -45,12 +45,12 @@
       </div>
       <div class="hero-socials hidden">
         <div id="linkedin-icon">
-          <a href="https://www.linkedin.com/in/gani-codes/" target="_blank">
+          <a href="https://www.linkedin.com/in/ganicodes/" target="_blank">
             <ion-icon name="logo-linkedin"></ion-icon>
           </a>
         </div>
         <div id="github-icon">
-          <a href="https://github.com/gani-codes" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/ganicodes" target="_blank" rel="noopener noreferrer">
             <ion-icon name="logo-github"></ion-icon>
           </a>
         </div>
@@ -103,16 +103,23 @@
             <span>C++</span>
             <span>Java</span>
             <span>JavaScript</span>
-            <span>Python</span>
           </article>
 
           <article class="skills-row">
-            <h4 class="text-grey">Web Technologies</h4>
+            <h4 class="text-grey">Frontend Technologies</h4>
 
             <span>HTML</span>
             <span>CSS</span>
             <span>Bootstrap</span>
             <span>React</span>
+            <span>MUI</span>
+          </article>
+
+          <article class="skills-row">
+            <h4 class="text-grey">Backend Technologies</h4>
+
+            <span>Express</span>
+            <span>NodeJS</span>
           </article>
 
           <article class="skills-row">
@@ -125,10 +132,8 @@
           <article class="skills-row">
             <h4 class="text-grey">Tools</h4>
 
-            <span>JIRA</span>
+            <span>Jira</span>
             <span>Git</span>
-            <span>Selenium</span>
-            <span>Maven</span>
           </article>
 
           <article class="skills-row">
@@ -143,7 +148,81 @@
   </section>
 
   <section class="" id="projects">
+    <h5>Projects</h5>
+    <h2>I've worked on</h2>
     <div class="container projects__container">
+      <!-- 1st project -->
+      <div class="project hidden">
+        <div class="project__preview">
+          <!-- Need to put three dots here -->
+          <div class="project__preview--bottom">
+            <img src="./public/img/keep.webp" alt="" />
+          </div>
+        </div>
+        <div class="project__content">
+          <h2>Fullstack Google Keep Clone</h2>
+          <div class="project__content--desc bg-variant">
+            <p class="text-grey">
+              A MERN stack application to create and manage notes with CRUD operations<br>Developed client side using React and Material UI<br>Used PassportJS with local and Google-OAuth2 strategy to implement authentication and authorization
+
+            </p>
+            <span class="text-primary">The site is completely responsive</span>
+          </div>
+          <div class="project__content-techstack">
+            <span class="text-grey">MongoDB</span>
+            <span class="text-grey">React JS</span>
+            <span class="text-grey">NodeJS</span>
+            <span class="text-grey">MUI</span>
+            <span class="text-grey">PassportJS</span>
+          </div>
+          <div class="project__content--code">
+            <a href="https://github.com/ganicodes/google-keep-clone.git" target="_blank" rel="noopener noreferrer">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <a href="http://65.2.33.138" target="_blank" rel="noopener noreferrer">
+              <ion-icon name="desktop-sharp"></ion-icon>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- 2nd Project -->
+      <div class="project hidden project--right">
+        <div class="project__preview">
+          <!-- Need to put three dots here -->
+          <div class="project__preview--bottom">
+            <img src="./public/img/cryptoracker-1.webp" alt="" />
+            <img src="./public/img/cryptoracker-2.webp" alt="" />
+          </div>
+        </div>
+        <div class="project__content project__content--left">
+          <h2>Cryptotracker</h2>
+          <div class="project__content--desc bg-variant">
+            <p class="text-grey">
+              A real-time cryptocurrency tracking app developed using React and CoinGecko API<br>Implemented material design using MUI 5<br>
+              Developed charts using Chart.JS displaying the price changes of multiple days<br>Handled API calls using Axios
+
+
+            </p>
+            <span class="text-primary">The site is completely responsive</span>
+          </div>
+          <div class="project__content-techstack">
+            <span class="text-grey">React JS</span>
+            <span class="text-grey">MUI 5</span>
+            <span class="text-grey">Chart JS</span>
+            <span class="text-grey">CoinGecko API</span>
+          </div>
+          <div class="project__content--code">
+            <a href="https://github.com/gani-codes/portfolio-react" target="_blank" rel="noopener noreferrer">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <a href="https://cryptoracker.netlify.app/" target="_blank" rel="noopener noreferrer">
+              <ion-icon name="desktop-sharp"></ion-icon>
+            </a>
+          </div>
+        </div>
+
+      </div>
+      <!-- 3rd project -->
       <div class="project hidden">
         <div class="project__preview">
           <!-- Need to put three dots here -->
@@ -178,7 +257,7 @@
 
 
       </div>
-      <!-- 2nd project -->
+      <!-- 4th project -->
       <div class="project hidden project--right">
         <div class="project__preview">
           <!-- Need to put three dots here -->
@@ -223,7 +302,8 @@
           <h2>Cognizant Tech Solutions</h2>
           <small>2021 - Present</small>
           <p>
-            Working as an SDET.
+            Working as a frontend developer in BFS domain.<br>
+            Developed ‘Accounts’ tab for a banking application that displays recent transaction and accounts details retrieved from APIs<br>
           </p>
           <span class="right-arrow"></span>
         </div>
@@ -286,14 +366,14 @@
             <div>
               <ion-icon class="text-primary-variant" name="logo-linkedin"></ion-icon>
             </div>
-            <a href="https://www.linkedin.com/in/gani-codes/" target="_blank" rel="noreferrer" class="text-primary">Lets
+            <a href="https://www.linkedin.com/in/ganicodes/" target="_blank" rel="noreferrer" class="text-primary">Lets
               connect</a>
           </article>
         </div>
       </div>
 
       <div class="contact-right">
-        <form ref="{form}" onSubmit="{sendEmail}">
+        <form name="submit-to-google-sheet">
           <input type="text" name="name" placeholder="Your Name" required />
           <input type="email" name="email" placeholder="Enter your email" required />
           <textarea name="message" rows="7" placeholder="A message for me" required></textarea>
@@ -310,12 +390,12 @@
       </div>
       <div class="hero-socials">
         <div id="linkedin-icon">
-          <a href="https://www.linkedin.com/in/gani-codes/" target="_blank">
+          <a href="https://www.linkedin.com/in/ganicodes/" target="_blank">
             <ion-icon name="logo-linkedin"></ion-icon>
           </a>
         </div>
         <div id="github-icon">
-          <a href="https://github.com/gani-codes" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/ganicodes" target="_blank" rel="noopener noreferrer">
             <ion-icon name="logo-github"></ion-icon>
           </a>
         </div>

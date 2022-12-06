@@ -189,7 +189,7 @@ header {
 .hero {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 2rem;
   gap: 2.5rem;
 }
@@ -199,6 +199,9 @@ header {
   flex-direction: column;
   justify-content: space-between;
   padding-right: 1rem;
+}
+#mydesc {
+  max-width: 450px;
 }
 
 .heroleft.hidden,
