@@ -143,4 +143,7 @@
     width: 100%;
     position: static;
   }
+  .project__preview--bottom::before {
+    background-image: none;
+  }
 }

@@ -29,8 +29,9 @@ article.show {
 .about__container {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* margin-top: 5rem; */
+  grid-template-columns: 1fr;
+  place-items: center;
+  align-content: center;
   padding-top: 2rem;
   gap: 1rem;
 }
