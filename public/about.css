@@ -116,6 +116,9 @@ article.show {
 /* For mobiles/small device */
 @media screen and (max-width: 600px) {
   /* About */
+  #about {
+    padding: 8rem 0;
+  }
   .about__container {
     grid-template-columns: 1fr;
   }
