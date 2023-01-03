@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gani</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./public/style.css" />
   <link rel="stylesheet" href="./public/about.css" />
   <link rel="stylesheet" href="./public/experience.css" />
@@ -17,7 +18,7 @@
 
 <body>
   <header  id="home">
-    <div class="container">
+    <div class="container navigation__container">
       <nav id="navigationBar">
         <a class="active-link" href="#home">Home</a>
         <a href="#about">About</a>
@@ -25,8 +26,10 @@
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
+    </div>
+    <div class="container">
       <div class="hero ">
-        <div class="heroleft hidden">
+        <div class="heroleft" data-aos="fade-right">
           <h2>Welcome, my name is</h2>
           <h1 id="myname">Gani Shaikh.</h1>
           <h2>&lt; React Developer /&gt;</h2>
@@ -39,7 +42,7 @@
             <a href="https://docs.google.com/document/d/1opYu3tvxeUm-X_Bna6Z9N4jF8EB4YkH7jrFsPG_Kh9Q/edit?usp=sharing" target="_blank" class="cta">Download Resume</a>
           </div>
         </div>
-        <div class="heroright hidden">
+        <div class="heroright" data-aos="fade-left">
           <img id="profilePic" src="./public/img/profile.png" alt="Profile image" />
         </div>
       </div>
@@ -76,7 +79,7 @@
         <img src="./public/img/profile-3.png" alt="dummy" />
       </div> -->
       <div class="about-right">
-        <div class="about-right__summary">
+        <div class="about-right__summary" data-aos="fade-up">
           <article class="bg-variant hidden">
             <ion-icon class="text-primary-variant" name="school-sharp"></ion-icon>
             <h2>Education</h2>
@@ -96,7 +99,7 @@
           </article>
         </div>
 
-        <div class="about-right__skills hidden bg-variant">
+        <div class="about-right__skills hidden bg-variant" data-aos="fade-down">
           <article class="skills-row">
             <h4 class="text-grey">Programming Langauges</h4>
 
@@ -152,7 +155,7 @@
     <h2>I've worked on</h2>
     <div class="container projects__container">
       <!-- 1st project -->
-      <div class="project hidden">
+      <div class="project hidden" data-aos="flip-left">
         <div class="project__preview">
           <!-- Need to put three dots here -->
           <div class="project__preview--bottom">
@@ -185,7 +188,7 @@
         </div>
       </div>
       <!-- 2nd Project -->
-      <div class="project hidden project--right">
+      <div class="project hidden project--right" data-aos="flip-right">
         <div class="project__preview">
           <!-- Need to put three dots here -->
           <div class="project__preview--bottom">
@@ -222,7 +225,7 @@
 
       </div>
       <!-- 3rd project -->
-      <div class="project hidden">
+      <div class="project hidden" data-aos="flip-left">
         <div class="project__preview">
           <!-- Need to put three dots here -->
           <div class="project__preview--bottom">
@@ -257,7 +260,7 @@
 
       </div>
       <!-- 4th project -->
-      <div class="project hidden project--right">
+      <div class="project hidden project--right" data-aos="flip-right">
         <div class="project__preview">
           <!-- Need to put three dots here -->
           <div class="project__preview--bottom">
@@ -294,7 +297,7 @@
   <section class="hidden" id="experience">
     <h5>My past</h5>
     <h2>Experience</h2>
-    <div class="container experience__container">
+    <div class="container experience__container" data-aos="zoom-in-up">
       <div class="experience-cards right-container">
         <span class="dot"></span>
         <div class="experience-card bg-variant">
@@ -338,7 +341,7 @@
     <h5>Lets</h5>
     <h2>Get in touch</h2>
     <div class="container contact__container">
-      <div class="contact-left">
+      <div class="contact-left" data-aos="fade-up-right">
         <div class="contact-card">
           <article>
             <div>
@@ -371,7 +374,7 @@
         </div>
       </div>
 
-      <div class="contact-right">
+      <div class="contact-right" data-aos="fade-up-left">
         <form name="submit-to-google-sheet">
           <input type="text" name="name" placeholder="Your Name" required />
           <input type="email" name="email" placeholder="Enter your email" required />
@@ -413,6 +416,12 @@
   </footer>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({
+    useClassNames: true,
+    initClassName: false,
+    animatedClassName: 'animated',
+  });</script>
 </body>
 
 </html>
