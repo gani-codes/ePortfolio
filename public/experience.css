@@ -23,7 +23,7 @@
   margin-left: -3px;
   z-index: -2;
 
-  animation: moveline 6s linear forwards;
+  /* animation: moveline 6s linear forwards; */
 }
 
 @keyframes moveline {
@@ -41,8 +41,8 @@
   width: 50%;
   margin-bottom: 1rem;
 
-  animation: moveboxes 1s linear forwards;
-  opacity: 0;
+  /* animation: moveboxes 1s linear forwards; */
+  /* opacity: 0; */
 }
 
 @keyframes moveboxes {
